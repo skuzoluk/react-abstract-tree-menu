@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-
-const TestData = require('test-data');
+import TestData from './test-data.js';
 
 function App() {
     const [selected, setSelected] = useState(-1);

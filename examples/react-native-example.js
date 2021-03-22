@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import { TouchableOpacity, View, Text } from 'react-native';
+import { TouchableOpacity, View, Text, SafeAreaView, StyleSheet } from 'react-native';
+import TreeMenu from 'react-abstract-tree-menu';
+import TestData from './test-data.js';
 
-const TestData = require('test-data');
-
-function App() {
+export default function App() {
     const [selected, setSelected] = useState(-1);
-
-    const onNodePress = (nodeData, level, isParent) => {
-        if (!isParent) {
-            setSelected(nodeData.id);
-        }
-    };
 
     const onRenderNode = (nodeData, level, isParent, expanded, isSelected, onNodePress) => {
         return (
@@ -20,14 +14,26 @@ function App() {
                 </View>
             </TouchableOpacity>
         )
-    };
+    }
 
+    const onNodePress = (nodeData, level, isParent) => {
+        if (!isParent) {
+            setSelected(nodeData.id);
+        }
+    }
     return (
-        <>
+        <SafeAreaView style={styles.container}>
             <View>
                 <TreeMenu treeData={TestData} onNodePress={onNodePress} onRenderNode={onRenderNode} />
             </View>
             <Text>Selected menu id: {selected}</Text>
-        </>
+        </SafeAreaView>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#ff',
+    },
+});
