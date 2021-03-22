@@ -1,0 +1,39 @@
+{
+  "name": "react-abstract-tree-menu",
+  "version": "1.0.0",
+  "description": "Tree abstraction for react and react native. Helps you to create nested menus or any nested tree components",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skuzoluk/react-abstract-tree-menu.git",
+    "homepage": "https://github.com/skuzoluk/react-abstract-tree-menu#readme"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "tree-list",
+    "tree-menu",
+    "tree",
+    "menu",
+    "abstract"
+  ],
+  "author": "Seçkin KUZOLUK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skuzoluk/react-abstract-tree-menu/issues"
+  },
+  "homepage": "https://github.com/skuzoluk/react-abstract-tree-menu#readme"
+}
