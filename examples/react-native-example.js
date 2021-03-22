@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import { TouchableOpacity, View, Text } from 'react-native';
 
 const TestData = require('test-data');
@@ -32,9 +31,3 @@ function App() {
         </>
     );
 }
-
-
-ReactDOM.render(
-    App,
-    document.getElementById('root')
-);
